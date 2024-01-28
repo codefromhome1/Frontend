@@ -9,7 +9,35 @@ body {
   background-color: skyblue;
 } */
 
-article:first-of-type {
+article:first-child {
   background-color: skyblue;
-  font-size: 24px;
+  font-size: 8px;
+  margin: 5px;
+  padding: 10p;
+}
+
+a {
+  background-color: red;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+}
+
+a:visited {
+  background-color: gray;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: orangered;
+}
+
+a:hover {
+  background-color: #273c75;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  text-decoration: none;
 }
