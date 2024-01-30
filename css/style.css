@@ -107,6 +107,7 @@ a:hover {
   background: linear-gradient(red, yellow, blue, orange);
   border: 2px solid slategray;
   border-width: 10px 20px 4px;
+  border-radius: 50%;
   /* box-shadow: -2px 2px 6px 0px rgba(0, 0, 0, 0.2),
     2px 6px 12px 0px rgba(0, 0, 0, 0.1); */
 }
