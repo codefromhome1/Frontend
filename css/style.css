@@ -78,3 +78,12 @@ a:hover {
   border-radius: 5px;
   text-decoration: none;
 }
+
+.box {
+  width: 200px;
+  height: 200px;
+  /* background-color: rgba(10, 175, 230, 1); */
+  margin-top: 10px;
+  /* background: linear-gradient(to right, dodgerblue, pink); */
+  background: radial-gradient(white, pink);
+}
