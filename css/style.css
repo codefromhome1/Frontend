@@ -85,5 +85,5 @@ a:hover {
   /* background-color: rgba(10, 175, 230, 1); */
   margin-top: 10px;
   /* background: linear-gradient(to right, dodgerblue, pink); */
-  background: radial-gradient(white, pink);
+  background: radial-gradient(circle, white, pink);
 }
