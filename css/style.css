@@ -115,11 +115,25 @@ a:hover {
   width: 200px;
   height: 200px;
   box-shadow: 0px 0px 30px grey;
-  /* transform: rotate(-45deg) translateY(-80px); */
   background: linear-gradient(dodgerblue, yellow);
 }
 
 h1 {
   color: white;
   text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* .container-box {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-around;
+} */
+
+.container-box div {
+  width: 200px;
+  border: 1px solid red;
+  height: 200px;
+  background-color: #273c75;
+  padding: 40px;
+  box-sizing: border-box;
 }
