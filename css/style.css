@@ -118,6 +118,10 @@ a:hover {
   background: linear-gradient(dodgerblue, yellow);
 }
 
+.own {
+  color: #16453e;
+}
+
 h2 {
   background-color: dodgerblue;
   color: white;

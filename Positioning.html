@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Positioning CSS</title>
+  </head>
+  <link rel="stylesheet" href="css/normalize.css" />
+
+  <style>
+    body {
+      background-color: #95afc0;
+    }
+
+    .boxes {
+      border: 10px solid linen;
+      /* box-shadow: 0 0 30px gray; */
+      box-shadow: 10px 10px 5px 0px #888888;
+      width: 200px;
+      height: 200px;
+      padding: 10px;
+      box-sizing: border-box;
+      margin: 100px;
+      background-color: dodgerblue;
+    }
+
+    h1 {
+      margin: 100px;
+      /* text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); */
+      text-shadow: 14px 20px 5px dodgerblue;
+    }
+
+    .boxe {
+      background-color: #30336b;
+      /* overflow: hidden; */
+      width: 100px;
+      height: 100px;
+      margin: 100px;
+      padding: 10px;
+      box-sizing: border-box;
+      box-shadow: 10px 10px 1px 0px #ddd;
+    }
+
+    img {
+      width: 100px;
+      height: 100px;
+      margin: 100px;
+      box-sizing: border-box;
+      border-radius: 50%;
+      box-shadow: 0px 0px 0px 10px #555;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      min-height: vh;
+    }
+
+    .box {
+      position: relative;
+      width: 300px;
+      height: 300px;
+      margin: 40px;
+    }
+
+    .box::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      filter: blur(25px);
+      transform: translate(30px) scale(0.9);
+    }
+
+    .box:nth-child(1),
+    .box:nth-child(1)::before {
+      background: linear-gradient(135deg, #f403d1, #64b5f6);
+    }
+  </style>
+
+  <body>
+    <!-- box-shadow: h-offset v-offset blur spread color inset; -->
+    <!-- h-offset: This specifies the horizontal offset of the shadow. -->
+    <!-- v-offset: This specifies the vertical offset of the shadow. -->
+    <!-- blur: This sets the blur radius of the shadow. A higher value creates a more blurred shadow. -->
+    <!-- spread: This controls the size of the shadow. A positive value increases the size, while a negative value decreases it. -->
+    <!-- color: This defines the color of the shadow. -->
+    <!-- inset: This is an optional keyword that makes the shadow appear inside the element instead of outside. -->
+    <div class="boxes"></div>
+    <!-- text-shadow: h-offset v-offset blur color; -->
+    <!-- h-offset: This specifies the horizontal offset of the shadow. -->
+    <!-- v-offset: This specifies the vertical offset of the shadow. -->
+    <!-- blur: This sets the blur radius of the shadow. A higher value results in a more blurred shadow. -->
+    <!-- color: This defines the color of the shadow. -->
+    <h1>welcome to BLUE SKY AIRLINES</h1>
+  </body>
+
+  <div class="boxe"></div>
+  <img
+    src="https://i.pinimg.com/564x/06/99/bd/0699bd81fc8bd2e1e44d94b388ce12fe.jpg"
+    alt=""
+  />
+  <div class="container">
+    <div class="box">Gradient</div>
+    <div class="box">Box</div>
+    <div class="box">Shadow</div>
+  </div>
+</html>
