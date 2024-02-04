@@ -3,8 +3,175 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Introduction</title>
+    <title>CSS Practice</title>
+    <!-- Link to Normalize.css -->
+    <link rel="stylesheet" href="css/normalize.css" />
+
+    <!-- Internal CSS styles -->
+    <style>
+      /* Basic CSS Reset using Normalize.css */
+
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Arial", sans-serif;
+      }
+      /* Introduction Section Styling */
+
+      header {
+        background-color: #3498db;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+      }
+
+      h1 {
+        margin-bottom: 10px;
+      }
+
+      p {
+        font-size: 18px;
+        line-height: 1.5;
+      }
+      /* CSS Selectors and Pseudo-Classes Example */
+
+      .main-content {
+        width: 80%;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #ecf0f1;
+        border: 1px solid #bdc3c7;
+        border-radius: 5px;
+      }
+
+      .main-content a {
+        color: #3498db;
+        text-decoration: none;
+      }
+
+      .main-content a:hover {
+        text-decoration: underline;
+      }
+      /* Pseudo-Elements Example */
+
+      .main-content::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+      /* CSS Specificity Example */
+
+      .specificity-example p {
+        color: #e74c3c;
+      }
+      /* CSS Inheritance Example */
+
+      .inheritance-example {
+        font-style: italic;
+      }
+      /* Colors Example */
+
+      .color-example {
+        color: #2ecc71;
+        background-color: #f0f0f0;
+      }
+      /* HTML Gradients Example */
+
+      .gradient-example {
+        background: linear-gradient(to right, #3498db, #e74c3c);
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+      }
+      /* Borders Example */
+
+      .border-example {
+        border: 2px solid #3498db;
+        padding: 10px;
+      }
+      /* Shadows Example */
+
+      .shadow-example {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+      }
+    </style>
   </head>
 
-  <body></body>
+  <body>
+    <!-- Introduction Section -->
+    <header>
+      <h1>CSS Practice</h1>
+      <p>Explore and practice various CSS topics</p>
+    </header>
+
+    <!-- CSS Selectors and Pseudo-Classes Example -->
+    <section class="main-content">
+      <h2>CSS Selectors and Pseudo-Classes</h2>
+      <p>
+        Learn how to target specific elements using selectors and apply styles
+        with pseudo-classes.
+      </p>
+      <a href="#">Visit our website</a>
+    </section>
+
+    <!-- Pseudo-Elements Example -->
+    <section class="main-content">
+      <h2>Pseudo-Elements</h2>
+      <p>
+        Understand and implement pseudo-elements to style specific parts of an
+        element.
+      </p>
+    </section>
+
+    <!-- CSS Specificity Example -->
+    <section class="main-content specificity-example">
+      <h2>CSS Specificity</h2>
+      <p>
+        Explore the concept of specificity in CSS and its impact on style
+        precedence.
+      </p>
+    </section>
+
+    <!-- CSS Inheritance Example -->
+    <section class="main-content inheritance-example">
+      <h2>CSS Inheritance</h2>
+      <p>
+        Learn how styles are inherited and how to control inheritance in CSS.
+      </p>
+    </section>
+
+    <!-- Colors Example -->
+    <section class="main-content color-example">
+      <h2>Colors</h2>
+      <p>
+        Experiment with color properties to enhance the visual appeal of your
+        web pages.
+      </p>
+    </section>
+
+    <!-- HTML Gradients Example -->
+    <section class="main-content gradient-example">
+      <h2>HTML Gradients</h2>
+      <p>Create smooth color transitions using gradients in HTML and CSS.</p>
+    </section>
+
+    <!-- Borders Example -->
+    <section class="main-content border-example">
+      <h2>Borders</h2>
+      <p>
+        Add borders to elements and customize their appearance using various
+        border properties.
+      </p>
+    </section>
+
+    <!-- Shadows Example -->
+    <section class="main-content shadow-example">
+      <h2>Shadows</h2>
+      <p>
+        Apply shadows to elements for a sense of depth and visual hierarchy in
+        your design.
+      </p>
+    </section>
+  </body>
 </html>
