@@ -56,6 +56,18 @@
       outline: none;
       background-color: #a4b0be;
     }
+
+    p::first-letter {
+      font-size: large;
+    }
+
+    ::selection {
+      background-color: pink;
+    }
+
+    p::before {
+      content: "...";
+    }
   </style>
 
   <body>
