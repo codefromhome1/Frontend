@@ -3,81 +3,103 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Introduction</title>
+    <title>Night one</title>
   </head>
   <style>
-    body {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    .intro {
+    article p:first-child {
       background-color: dodgerblue;
-      color: white;
+    }
+
+    article p:last-child {
+      width: 80% !important;
       padding: 10px;
-      text-align: center;
-    }
-
-    .section-a {
-      box-sizing: border-box;
-      /* margin: 100px auto 100px 80px; */
-      margin: 50px;
-      /* top right bottom left */
-      /* font-size: 24px; */
+      background-color: lightslategray;
+      color: white;
       border: 1px solid #ddd;
-      padding: 30px;
-      background-color: #ddd;
       border-radius: 5px;
+      /* margin: 100px; */
     }
 
-    h1.section-a {
-      text-transform: capitalize;
-    }
-
-    .section-a a {
-      text-decoration: none;
-      color: #20a7db;
-    }
-
-    .section-a a:hover {
-      text-decoration: underline;
+    article:first-of-type {
+      background-color: #82589f;
+      color: white;
     }
 
     article {
-      margin: 100px;
-      padding: 30px;
-      box-sizing: border-box;
-      background-color: #cad3c8;
-      color: white;
-      border-radius: 5px;
+      width: 80%;
+      box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.6);
     }
 
-    article p:first-of-type {
-      background-color: #20a7db;
+    #anchor {
+      margin-top: 100px;
+    }
+
+    a {
+      background-color: green;
       color: white;
-      margin: 10px 0;
-      padding: 10px;
+      text-decoration: none;
+      padding: 20px;
+      pointer-events: cursor;
+    }
+
+    a:hover {
+      background-color: lightblue;
+    }
+
+    input {
+      width: 30%;
+      padding: 17px;
+      border: 3px solid lightgrey;
+    }
+
+    input:focus {
+      outline: none;
+      background-color: #a4b0be;
     }
   </style>
 
   <body>
-    <!-- Introduction -->
-    <div class="intro">
-      <h1>CSS Practice</h1>
-      <p>Explore and practice various CSS topics</p>
-    </div>
-    <!-- css selector and Pseudo-Classes -->
-    <div class="section-a">
-      <h2>css selector and Pseudo-Classes</h2>
-      <p>
-        learn how to target specific elements using selectors and apply styles
-      </p>
-      <a href="#">Visit our website</a>
-    </div>
+    <!-- CSS Pseudo-Classes  and Selectors - Night One -->
     <article>
-      <p>Lorem ipsum dolor sit amet.</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      <p>
+        Welcome to Night One of the CSS Pseudo-Classes and Selectors Challenge!
+      </p>
+
+      <p>
+        Today, we will explore the fundamentals of CSS selectors and
+        pseudo-classes. These powerful tools allow us to target specific HTML
+        elements and apply styles selectively.
+      </p>
+
+      <p>Let's dive into some examples:</p>
+
+      <ul>
+        <li>
+          Select all paragraphs within a specific container:
+          <code>.container p</code>
+        </li>
+        <li>
+          Target the first child of an element: <code>li:first-child</code>
+        </li>
+        <li>Style links on hover: <code>a:hover</code></li>
+      </ul>
+
+      <p>
+        Feel free to experiment with these selectors and pseudo-classes in your
+        own projects. Check the browser's developer tools to see the changes in
+        real-time!
+      </p>
+
+      <p>
+        Stay tuned for more exciting CSS challenges as we progress through this
+        learning journey!
+      </p>
     </article>
+    <!-- Anchor Pseudo-classes -->
+    <section id="anchor">
+      <a href="#MouseOverMe">Mouse Over Me</a>
+      <input type="text" placeholder="Click me to get focus" />
+      <!-- <input type="text" value="Hover over me!" /><br /> -->
+    </section>
   </body>
 </html>
