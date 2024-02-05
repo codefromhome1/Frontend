@@ -27,6 +27,7 @@
     }
     
     article {
+        padding: 10px;
         width: 80%;
         box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.6);
     }
@@ -74,6 +75,25 @@
         content: "__";
     }
     
+    .para-1::before {
+        content: "";
+    }
+    
+    .para-1::after {
+        content: "";
+    }
+    
+    .para-2 {
+        display: none;
+        background-color: #a4b0be;
+        color: white;
+        padding: 10px;
+    }
+    
+    .para-1:hover p .para-2 {
+        display: block;
+    }
+    
     .message {
         display: none;
         background-color: #E3F2FD;
@@ -116,7 +136,8 @@
             Feel free to experiment with these selectors and pseudo-classes in your own projects. Check the browser's developer tools to see the changes in real-time!
         </p>
 
-        <p>
+        <p class="para-1">Read more</p>
+        <p class="para-2">
             Stay tuned for more exciting CSS challenges as we progress through this learning journey!
         </p>
     </article>
