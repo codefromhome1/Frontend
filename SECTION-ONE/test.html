@@ -106,6 +106,20 @@
     .container:hover .message {
         display: block;
     }
+    
+    .CSS-inheritance {
+        border: 2px solid lightslategray;
+        margin: 100px 100px 50px 100px;
+        width: 80%;
+        background-color: #82589f;
+        color: white;
+    }
+    
+    strong {
+        /* border: 2px solid gold; */
+        color: initial;
+        border: inherit;
+    }
 </style>
 
 <body>
@@ -151,7 +165,11 @@
             <input type="text" placeholder="Click me to get focus" />
             <!-- <input type="text" value="Hover over me!" /><br /> -->
         </section>
-        <!-- Specificity  Calculator -->
+        <!-- CSS-inheritance -->
+        <div class="CSS-inheritance">
+            <p>Lorem ipsum dolor sit amet <strong>consectetur</strong>adipisicing elit. Atque, quis!
+            </p>
+        </div>
 </body>
 
 </html>
