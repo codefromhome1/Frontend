@@ -1,3 +1,6 @@
+/* body {
+} */
+
 .box {
   border: 1px solid #d2d6de;
   background-color: dodgerblue;
@@ -17,4 +20,23 @@ div {
   height: 100px;
   padding: 10px;
   box-sizing: border-box;
+}
+
+#measurements {
+  font-size: 32px;
+}
+
+.pix {
+  color: orchid;
+  font-size: 16px;
+}
+
+.em {
+  color: orange;
+  font-size: 1.5em;
+}
+
+.per {
+  color: orangered;
+  font-size: 150%;
 }
