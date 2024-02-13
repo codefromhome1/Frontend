@@ -1,7 +1,8 @@
 /* body {
 } */
 
-.box {
+.box-es {
+  /* margin-top: 10px; */
   border: 1px solid #d2d6de;
   background-color: dodgerblue;
   color: white;
@@ -11,8 +12,7 @@
   box-sizing: border-box;
 }
 
-div {
-  /* margin-top: 10px; */
+.box {
   border: 1px solid #d2d6de;
   background-color: dodgerblue;
   color: white;
@@ -39,4 +39,18 @@ div {
 .per {
   color: orangered;
   font-size: 150%;
+}
+
+.boxese {
+  /* background-color: orange;
+  width: 50%; */
+  /*fixed lengths*/
+  /* height: 150px; */
+  border: 2px solid dodgerblue;
+}
+
+.boxe-1 {
+  width: 3rem;
+  height: 3rem;
+  background-color: aqua;
 }
