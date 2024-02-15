@@ -1,7 +1,7 @@
 /* body {
 } */
 
-.box-es {
+.box-es div {
   /* margin-top: 10px; */
   border: 1px solid #d2d6de;
   background-color: dodgerblue;
@@ -41,16 +41,27 @@
   font-size: 150%;
 }
 
-.boxese {
-  /* background-color: orange;
-  width: 50%; */
-  /*fixed lengths*/
-  /* height: 150px; */
-  border: 2px solid dodgerblue;
+.boxes{
+  padding: 10px;
+  color: white;
+  background-color: dodgerblue;
 }
+.boxes div{
+  padding: 20px;
+  width: 100px;
+height: 50px;
+}
+.boxe-1{
+background-color: orange;
 
-.boxe-1 {
-  width: 3rem;
-  height: 3rem;
-  background-color: aqua;
+
 }
+.boxe-2{
+  background-color: lightgreen;
+ 
+  
+
+  }
+  .boxe-3{
+    background-color: lawngreen;
+    }
