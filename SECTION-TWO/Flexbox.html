@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box </title>
+</head>
+<style>
+    .box{
+        border: 2px solid lightgray;
+        display: flex;
+        /* flex-direction: column; */
+        flex-direction: row;
+        /* justify-content: space-around; */
+        /* justify-content: space-evenly; */
+        justify-content: space-between;
+        /* align-items: flex-start; */
+        align-items: center;
+        height: 80vh;
+    }
+    .boxes{
+        background-color: orange;
+    color: white;
+    width: 3rem;
+    height: 3rem;
+    margin: 0.5rem;
+    }
+    .container{
+        margin-top: 10px;
+        border: 2px dotted dodgerblue;
+        padding: 10px;
+        display: flex;
+        flex-direction: row;
+justify-content: space-around;
+height: 50vh;        
+align-items: center;
+flex-wrap: wrap;
+align-content: center;
+/* overflow: scroll; */
+    }
+    .boxe{
+        flex-basis: 3rem;
+        flex-grow: 1;
+        flex-shrink: 1;
+        width: 5rem;
+        height: 5rem;
+        background-color:skyblue;
+        color: white;
+        padding: 20px;
+        margin: 0.5rem;
+       
+    }
+    .box-one{
+        /* align-self: flex-start; */
+        flex-grow: 0;
+        flex-shrink: 2;
+    }
+</style>
+<body>
+    <div class="box">
+        <div class="boxes">A</div>
+        <div class="boxes">B</div>
+        <div class="boxes">C</div>
+    </div>
+
+    <div class="container">
+        <div class="boxe box-one">A</div>
+        <div class="boxe">B</div>
+        <div class="boxe">C</div>
+        <div class="boxe">D</div>
+        <div class="boxe">E</div>
+        <div class="boxe">F</div>
+        <div class="boxe">G</div>
+        <div class="boxe">H</div>
+        <div class="boxe">I</div>
+    </div>
+</body>
+</html>
